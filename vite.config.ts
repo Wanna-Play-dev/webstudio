@@ -1,8 +1,6 @@
 import { defineConfig } from "vite";
+import { reactRouter } from "@react-router/dev/vite";
 
 export default defineConfig({
-  // resolve only webstudio condition in tests
-  resolve: {
-    conditions: ["webstudio"],
-  },
+  plugins: [reactRouter()],
 });
